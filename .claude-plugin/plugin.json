@@ -1,0 +1,13 @@
+{
+  "name": "kotoba",
+  "version": "1.0.0",
+  "description": "Generate importable Anki decks for language learning, with deep per-language reading accuracy (furigana, pinyin, on/kun) and auto-created references for new languages.",
+  "author": {
+    "name": "Yufeng Liu"
+  },
+  "homepage": "https://github.com/yufengliu15/kotoba",
+  "repository": "https://github.com/yufengliu15/kotoba",
+  "license": "MIT",
+  "keywords": ["anki", "flashcards", "language-learning", "spaced-repetition", "japanese", "mandarin", "jlpt", "hsk", "skill"],
+  "skills": ["./skills/kotoba"]
+}

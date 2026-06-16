@@ -1,0 +1,13 @@
+{
+  "name": "kotoba",
+  "version": "1.0.0",
+  "description": "Generate importable Anki decks for language learning that get the readings right.",
+  "license": "MIT",
+  "author": "Yufeng Liu",
+  "homepage": "https://github.com/yufengliu15/kotoba",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yufengliu15/kotoba.git"
+  },
+  "keywords": ["anki", "flashcards", "language-learning", "spaced-repetition", "japanese", "mandarin", "jlpt", "hsk", "agent-skills", "claude-code-plugin"]
+}

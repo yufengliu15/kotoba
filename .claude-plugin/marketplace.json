@@ -1,0 +1,14 @@
+{
+  "name": "kotoba",
+  "owner": {
+    "name": "Yufeng Liu",
+    "url": "https://github.com/yufengliu15"
+  },
+  "plugins": [
+    {
+      "name": "kotoba",
+      "source": "./",
+      "description": "Anki deck builder for language learning that gets the readings right."
+    }
+  ]
+}
