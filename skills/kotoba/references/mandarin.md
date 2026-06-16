@@ -1,6 +1,6 @@
 # Mandarin Chinese schema (deep)
 
-Rules for generating Mandarin vocabulary cards. These exist because the most common public failures of LLM-generated Chinese decks are wrong pinyin, wrong 多音字 readings, and stilted example sentences. Every rule below closes one of those holes.
+Rules for generating Mandarin vocabulary cards. These exist because the most common public failures of LLM-generated Chinese decks are wrong pinyin, wrong dual-pronunciation characters readings, and stilted example sentences. Every rule below closes one of those holes.
 
 ## Script and variant
 
@@ -15,7 +15,7 @@ Rules for generating Mandarin vocabulary cards. These exist because the most com
 - **Tone sandhi is NOT written**: 不 is always `bù`, 一 is always `yī` in the reading field, third-tone pairs keep their citation tones (`nǐ hǎo`, not `ní hǎo`). Readings record citation form; pronunciation rules live in the learner's head.
 - `reading` field: syllables of one word run together (`tèbié`), spaces between words in multi-word entries.
 
-## 多音字 (polyphonic characters) — the #1 hallucination class
+## Dual-pronunciation characters — the #1 hallucination class
 
 Before finalizing any card whose word contains 得, 了, 着, 长, 行, 重, 还, 觉, 教, 便, 地, 都, 乐, 数, 切, 发, 当, 假, 间, 倒, 好, 为 — stop and verify the reading matches *this word's* pronunciation, not the character's most common one. Examples: 觉得 `juéde` but 睡觉 `shuìjiào`; 银行 `yínháng` but 行为 `xíngwéi`; 长城 `Chángchéng` but 长大 `zhǎngdà`. The ruby in the example sentence must also use the in-context reading (e.g. 了 as `le` aspect marker vs `liǎo` in 了解).
 
@@ -57,4 +57,4 @@ Two different voices on purpose: the learner hears the word in isolation and the
 - `sentence` contains `word` (tags stripped).
 - `reading` ≈ concatenation of the word's `<rt>` syllables.
 
-What it **cannot** check: whether a valid syllable is the *correct* reading for this word, and whether the sentence is natural. That is the Phase 4 self-check's job — do it character by character for the 多音字 list above.
+What it **cannot** check: whether a valid syllable is the *correct* reading for this word, and whether the sentence is natural. That is the Phase 4 self-check's job — do it character by character for the dual-pronunciation characters list above.

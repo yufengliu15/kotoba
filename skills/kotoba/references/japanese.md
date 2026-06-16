@@ -11,7 +11,7 @@ Rules for generating Japanese vocabulary cards. These exist because the most com
 
 ## Readings — the #1 hallucination class (on'yomi vs kun'yomi)
 
-This is Japanese's equivalent of 多音字. The same kanji has multiple readings, and the LLM's instinct is to pick the most frequent one rather than the correct one for *this* compound. **Before finalizing any card, verify the reading is correct for the specific word, not the character's default.**
+This is the Japanese version of the dual-pronunciation problem. The same kanji has multiple readings, and the LLM's instinct is to pick the most frequent one rather than the correct one for *this* compound. **Before finalizing any card, verify the reading is correct for the specific word, not the character's default.**
 
 Highest-risk patterns:
 
