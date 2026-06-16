@@ -15,13 +15,13 @@ Most AI-generated flashcard decks look fine and are quietly wrong: the furigana 
 
 ![Example Kotoba card — front and back of 妈妈](./assets/example-card.png)
 
-Front shows the word and an example sentence with the target highlighted (no reading — that's the recall test). Back adds the pinyin/furigana as ruby, a concise definition, the full sentence with readings, a translation, and word + sentence audio in two distinct voices. Kaishi-1.5k-style layout.
+Front shows the word and an example sentence with the target highlighted. Back adds the pinyin/furigana as ruby, a concise definition, the full sentence with readings, a translation, and word + sentence audio in two distinct voices.
 
 ## Accuracy: with Kotoba vs. without
 
 The whole point is the readings. A plain "make me 100 Anki cards" prompt to a bare LLM produces cards that look right and fail in the specific ways a learner can't catch until they've already drilled the mistake. Kotoba routes every card through a per-language reference and a dedicated reading self-check.
 
-Measured on a 100-card sample deck (50 Japanese N4, 50 Mandarin HSK4), graded by hand against a dictionary:
+Measured on a 100-card sample deck (50 Japanese N4, 50 Mandarin HSK4) generated with Opus 4.8 Max, graded by hand against a dictionary:
 
 | What gets checked | Bare LLM prompt | With Kotoba |
 | --- | --- | --- |
