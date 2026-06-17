@@ -7,7 +7,9 @@
 ![Cost](https://img.shields.io/badge/cost-free-111111?style=flat-square)
 ![Languages](https://img.shields.io/badge/deep_support-Japanese_%26_Mandarin-111111?style=flat-square)
 
-**Importable Anki decks for any language, with the readings actually correct.**
+**Kotoba is an agent skill that turns one plain-language request — "make me 100 HSK4 travel words, with audio" — into a finished, importable Anki deck, with the readings actually correct.**
+
+You describe the deck in plain language and shape it however you see fit; Kotoba plans it with you, generates the cards, validates them, and hands back a standalone `.apkg` to import and study. It's not an app or a subscription — just instructions and two scripts that run wherever your LLM already does. Deep support for Japanese and Mandarin; it researches and writes a reference for any other language on the fly.
 
 Most AI-generated flashcard decks look fine and are quietly wrong: the furigana is misaligned, the kanji takes its on'yomi where it should be kun'yomi, the pinyin picks the wrong reading of a dual-pronunciation character, the example sentence reads like a textbook from 1987. One bad batch in your collection and you've memorized a mistake. Kotoba is built around not doing that.
 
@@ -37,6 +39,8 @@ These are sample-run numbers, not a guarantee, your mileage varies by language a
 ## What makes it different
 
 **It gets the readings right.** Each supported language has a deep reference encoding its specific traps. Japanese: furigana chunking, on'yomi vs kun'yomi, rendaku, irregular whole-word readings, counters. Mandarin: pinyin tone marks, dual-pronunciation characters, HSK conventions. These are the exact error classes that embarrass generated decks, handled per-language rather than by a generic schema.
+
+**You shape every deck in plain words.** Count, level, topic, ordering (frequency or thematic), script variant, one voice or two, images or not — you set it all by describing what you want, then refine in chat until the spec and the sample cards are exactly right. No config files, no rigid presets; the deck bends to you.
 
 **It's free, and yours.** Kotoba is a skill, not a service. There's no subscription, no per-deck fee, no account, no website that might disappear next year. Once it's installed you own the whole pipeline: the generation rules, the validator, the packaging script all live on your machine. The only outside dependency is the LLM you're already using to run it (and edge-tts for audio, which is free). No third-party deck vendor sits between you and your cards.
 

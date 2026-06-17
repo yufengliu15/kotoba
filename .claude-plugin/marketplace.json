@@ -4,11 +4,22 @@
     "name": "Yufeng Liu",
     "url": "https://github.com/yufengliu15"
   },
+  "metadata": {
+    "description": "Generate importable, reading-accurate Anki decks for language learning from a plain-language request."
+  },
   "plugins": [
     {
       "name": "kotoba",
       "source": "./",
-      "description": "Anki deck builder for language learning that gets the readings right."
+      "description": "Anki deck builder for language learning that gets the readings right. Plans the deck with you, generates and validates the cards, and packages a standalone .apkg with correct furigana/pinyin, audio, and natural example sentences.",
+      "category": "productivity",
+      "keywords": ["anki", "flashcards", "language-learning", "spaced-repetition", "japanese", "mandarin", "jlpt", "hsk"],
+      "homepage": "https://github.com/yufengliu15/kotoba",
+      "repository": "https://github.com/yufengliu15/kotoba",
+      "license": "MIT",
+      "author": {
+        "name": "Yufeng Liu"
+      }
     }
   ]
 }

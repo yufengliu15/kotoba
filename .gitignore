@@ -7,3 +7,4 @@ deck.json
 preview.html
 *-image-credits.txt
 node_modules/
+.remember/
